@@ -1,0 +1,9 @@
+[Unit]
+Description=Virtual Led Management service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/virtled &
+
+[Install]
+WantedBy=default.target
